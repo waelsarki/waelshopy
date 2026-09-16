@@ -83,6 +83,7 @@ function App() {
       setCheckoutStep('basket')
       setEditingCustomer(false)
       setNotice('Order placed. Waelshopy has been notified.')
+      window.setTimeout(() => setNotice(''), 4000)
     } catch (error) {
       setNotice(error.message === 'Email service is not configured' ? 'Order paused: email service is not configured.' : 'Order could not be placed. Please try again.')
     } finally {
