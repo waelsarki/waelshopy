@@ -1,0 +1,21 @@
+{
+  "name": "waelshopy-storefront",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "server": "node server.js",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "dotenv": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "resend": "latest"
+  },
+  "devDependencies": {}
+}
