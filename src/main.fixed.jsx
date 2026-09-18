@@ -166,81 +166,38 @@ function App() {
 
       <main id="top">
         <section className="hero" id="shop">
-
-          <section className="proof-section" aria-label="Customer reviews and trust signals">
-            <div className="section-heading compact-heading proof-heading">
-              <div>
-                <p className="eyebrow">Loved by everyday homes</p>
-                <h2>Why people come back<br /><em>for more.</em></h2>
-              </div>
+          <div className="hero-copy">
+            <p className="eyebrow"><span className="eyebrow-dot" /> Fresh clean, made simple</p>
+            <h1>
+              Clean dishes.<br />
+              <em>Clear mind.</em>
+            </h1>
+            <p className="hero-text">A little lime, a lot of clean. Waelshopy is your everyday dish wash liquid for a brighter kitchen and a lighter routine.</p>
+            <div className="hero-actions">
+              <a className="primary-button" href="#products">Shop the clean <span>↘</span></a>
+              <span className="delivery-note"><strong>Delivery fee ₦600</strong><br />to all destinations</span>
             </div>
-
-            <div className="proof-grid">
-              <article className="proof-card highlight-proof">
-                <div className="review-stars">★★★★★</div>
-                <p>“It cuts through grease without leaving my hands feeling stripped. The citrus finish is honestly the best part.”</p>
-                <strong>— Aisha, Lagos</strong>
-              </article>
-
-              <article className="proof-card">
-                <div className="review-metric">
-                  <strong>120+</strong>
-                  <span>happy homes</span>
-                </div>
-                <p>Cleaner dishes, easier routines, and a product people actually look forward to using.</p>
-              </article>
-
-              <article className="proof-card">
-                <div className="review-metric">
-                  <strong>4.9/5</strong>
-                  <span>average rating</span>
-                </div>
-                <p>Fast refill drops, consistent delivery, and a fresh scent that feels premium every time.</p>
-              </article>
-            </div>
-          </section>
-
-        </section>
-
-        <section className="benefits-section" aria-label="Why customers choose Waelshopy">
-          <div className="section-heading compact-heading">
-            <div>
-              <p className="eyebrow">Why people keep coming back</p>
-              <h2>Made to feel<br /><em>easy.</em></h2>
+            <div className="hero-stats">
+              <div><strong>500</strong><span>ml of clean</span></div>
+              <div><strong>98%</strong><span>plant-inspired</span></div>
+              <div><strong>01</strong><span>easy choice</span></div>
             </div>
           </div>
-          <div className="benefits-grid">
-            <article className="benefit-card">
-              <span className="benefit-icon">✦</span>
-              <h3>Grease, handled</h3>
-              <p>Built for everyday messes without the harsh after-feel.</p>
-            </article>
-            <article className="benefit-card highlight-card">
-              <span className="benefit-icon">✓</span>
-              <h3>Trusted daily</h3>
-              <p>Fresh citrus scent, gentle formula, and a clean finish you can feel.</p>
-            </article>
-            <article className="benefit-card">
-              <span className="benefit-icon">↗</span>
-              <h3>Fast delivery</h3>
-              <p>Quick ordering and reliable delivery that keeps your routine moving.</p>
-            </article>
+
+          <div className="hero-visual">
+            <div className="sun-disc" />
+            <div className="floating-badge">Same-day delivery</div>
+            <div className="image-frame">
+              <img src="/assets/waelshopy-bottle.png" alt="Waelshopy lime and citrus dish wash bottle" />
+            </div>
+            <p className="bottle-caption">Lime + citrus extracts <span>•</span> 500ml</p>
+            <div className="leaf leaf-one" />
+            <div className="leaf leaf-two" />
           </div>
         </section>
 
-        <section className="trust-strip" aria-label="Waelshopy quality promise">
-          <div className="trust-item">
-            <strong>₦600</strong>
-            <span>delivery fee</span>
-          </div>
-          <div className="trust-item">
-            <strong>Same day</strong>
-            <span>for nearby orders</span>
-          </div>
-          <div className="trust-item">
-            <strong>4.9/5</strong>
-            <span>customer feel-good rating</span>
-          </div>
+        <section className="ticker" aria-label="Product benefits">
+          <span>Powerful on grease</span><i>✳</i><span>Gentle on hands</span><i>✳</i><span>Fresh citrus finish</span><i>✳</i><span>Made for everyday</span>
         </section>
 
         <section className="products-section" id="products">
@@ -261,7 +218,6 @@ function App() {
                 <div className="product-info">
                   <div>
                     <p className="product-size">{product.size}</p>
-                    <p className="product-tag">{index === 0 ? 'Best seller' : 'Fresh pick'}</p>
                     <h3>{product.name}</h3>
                     <p className="product-description">{product.description}</p>
                   </div>
@@ -298,39 +254,6 @@ function App() {
           </div>
         </section>
 
-        <section className="proof-section" aria-label="Customer reviews and trust signals">
-            <div className="section-heading compact-heading proof-heading">
-              <div>
-                <p className="eyebrow">Loved by everyday homes</p>
-                <h2>Why people come back<br /><em>for more.</em></h2>
-              </div>
-            </div>
-
-            <div className="proof-grid">
-              <article className="proof-card highlight-proof">
-                <div className="review-stars">★★★★★</div>
-                <p>“It cuts through grease without leaving my hands feeling stripped. The citrus finish is honestly the best part.”</p>
-                <strong>— Aisha, Lagos</strong>
-              </article>
-
-              <article className="proof-card">
-                <div className="review-metric">
-                  <strong>120+</strong>
-                  <span>happy homes</span>
-                </div>
-                <p>Cleaner dishes, easier routines, and a product people actually look forward to using.</p>
-              </article>
-
-              <article className="proof-card">
-                <div className="review-metric">
-                  <strong>4.9/5</strong>
-                  <span>average rating</span>
-                </div>
-                <p>Fast refill drops, consistent delivery, and a fresh scent that feels premium every time.</p>
-              </article>
-            </div>
-        </section>
-
         <section className="story-section" id="story">
           <div className="story-image">
             <img src="/assets/waelshopy-lifestyle.jpg" alt="Citrus fruits beside the Waelshopy bottle" />
@@ -364,13 +287,13 @@ function App() {
 
       {cartOpen && (
         <div className="drawer-backdrop" onClick={closeOrder}>
-          <aside className="order-drawer" role="dialog" aria-modal="true" aria-labelledby="order-title" onClick={(event) => event.stopPropagation()}>
+          <aside className="order-drawer" onClick={(event) => event.stopPropagation()}>
             {checkoutStep === 'basket' ? (
               <>
                 <div className="drawer-header">
                   <div>
                     <p className="eyebrow">Your basket</p>
-                    <h2 id="order-title">Your order</h2>
+                    <h2>Your order</h2>
                   </div>
                   <button className="close-button" onClick={closeOrder} aria-label="Close order">×</button>
                 </div>
@@ -430,7 +353,7 @@ function App() {
                 <div className="drawer-header">
                   <div>
                     <button className="back-button" type="button" onClick={() => setCheckoutStep('basket')}>← Back to basket</button>
-                    <h2 id="order-title">Payment</h2>
+                    <h2>Payment</h2>
                   </div>
                   <button className="close-button" onClick={closeOrder} aria-label="Close order">×</button>
                 </div>
