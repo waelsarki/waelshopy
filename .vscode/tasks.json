@@ -98,46 +98,6 @@
 			"isBackground": false,
 			"problemMatcher": [],
 			"group": "build"
-		},
-		{
-			"label": "Inspect git before push",
-			"type": "shell",
-			"command": "git status --short && git remote -v && git branch --show-current",
-			"isBackground": false,
-			"problemMatcher": [],
-			"group": "build"
-		},
-		{
-			"label": "Inspect git before push",
-			"type": "shell",
-			"command": "git status --short; git remote -v; git branch --show-current",
-			"isBackground": false,
-			"problemMatcher": [],
-			"group": "build"
-		},
-		{
-			"label": "Git status semicolon check",
-			"type": "shell",
-			"command": "git status --short; git remote -v; git branch --show-current",
-			"isBackground": false,
-			"problemMatcher": [],
-			"group": "build"
-		},
-		{
-			"label": "Review final git diff",
-			"type": "shell",
-			"command": "git diff --stat; git diff -- index.html src/main.jsx src/styles.css",
-			"isBackground": false,
-			"problemMatcher": [],
-			"group": "build"
-		},
-		{
-			"label": "Commit and push Waelshopy",
-			"type": "shell",
-			"command": "git add .; git commit -m \"Upgrade Waelshopy storefront experience\"; git push origin main",
-			"isBackground": false,
-			"problemMatcher": [],
-			"group": "build"
 		}
 	]
 }
